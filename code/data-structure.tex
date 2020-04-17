@@ -1,0 +1,183 @@
+\documentclass[a4paper,12pt]{article} 
+\usepackage{textcomp}
+\usepackage[justification=justified,singlelinecheck=false]{caption}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage[lite,subscriptcorrection,slantedGreek,nofontinfo]{mtpro2}
+\pdfmapfile{=mtpro2.map}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{tikz}
+\usepackage{enumitem}
+\usepackage{float}
+\usetikzlibrary{shapes}
+\usetikzlibrary{arrows.meta,calc,decorations.markings,math,arrows.meta}
+\usetikzlibrary{positioning}
+\usetikzlibrary{backgrounds}
+\usepackage{ragged2e}
+
+
+%%% Define styles
+
+% arrow
+\tikzstyle{line} = [draw, -{Latex[scale=1.25]}, very thick, rounded corners=5pt]
+
+% semi-transparent rectangle - vertical
+\tikzstyle{strectv} = [rectangle, draw = white, fill = white, opacity = 0.8, minimum height=1em, minimum width=0.5em]
+
+% semi-transparent rectangle - horizontal
+\tikzstyle{strecth} = [rectangle, draw = white, fill = white, opacity = 0.8, minimum height=0.5em, minimum width=1em]
+
+% circle
+\tikzstyle{ncircle} = [circle, draw=black, very thick, fill = white, inner sep=0pt,minimum size=2mm]
+
+%\tikzstyle{cloud} = [draw, ellipse,fill=black!20, node distance=1cm,
+%    minimum height=1em, minimum width=10em]
+
+% rectangle white
+\tikzstyle{rect} = [rectangle, draw, fill = white, ultra thick, text width=3em, text centered, minimum height=2em, text width=6em, minimum width=5em, overlay]
+
+% rectangle white wide
+\tikzstyle{rectw} = [rectangle, draw, fill = white, ultra thick, text centered, minimum height=2em, text width=8em, minimum width=9em, overlay]
+
+% rectangle grey
+\tikzstyle{rectg} = [rectangle, draw, fill=gray!50, ultra thick, text width=3em, text centered, minimum height=2em, text width=6em, minimum width=5em, overlay]
+
+\begin{document}
+\begin{center}
+\hspace{-0.5cm}\begin{tikzpicture}[node distance = 1.6cm, scale=0.6, every node/.style={scale=0.6}]
+% Place nodes
+\linespread{0.7}
+
+
+
+% Core
+\node [rect] at (0,-4.3) (core0) {\small\tt country};
+\node [rect, below of = core0, node distance = 0.8cm] (core1) {\small\tt pageid};
+\node [rect, below of = core1, node distance = 0.8cm] (core2) {\small\tt wikidataid};
+\node [rect, below of = core2, node distance = 0.8cm] (core3) {\small\tt wikititle};
+\node [rect, below of = core3, node distance = 0.8cm] (core4) {\small\tt name};
+\node [rect, below of = core4, node distance = 0.8cm] (core5) {\small\tt sex};
+\node [rect, below of = core5, node distance = 0.8cm] (core6) {\small\tt ethnicity};
+\node [rect, below of = core6, node distance = 0.8cm] (core7) {\small\tt religion};
+\node [rect, below of = core7, node distance = 0.8cm] (core8) {\small\tt birth};
+\node [rect, below of = core8, node distance = 0.8cm] (core9) {\small\tt death};
+\node [rect, below of = core9, node distance = 0.8cm] (core10) {\small\tt birthplace};
+\node [rect, below of = core10, node distance = 0.8cm] (core11) {\small\tt deathplace};
+\node[text width=3em] at (0.06,-3.5) {\it \large Core};
+
+
+% History
+\node [rect] at (-6,-3) (history1) {\small\tt pageid};
+\node [rect, below of = history1, node distance = 0.8cm] (history2) {\small\tt revid};
+\node [rect, below of = history2, node distance = 0.8cm] (history3) {\small\tt parentid};
+\node [rect, below of = history3, node distance = 0.8cm] (history4) {\small\tt user};
+\node [rect, below of = history4, node distance = 0.8cm] (history5) {\small\tt userid};
+\node [rect, below of = history5, node distance = 0.8cm] (history6) {\small\tt time};
+\node [rect, below of = history6, node distance = 0.8cm] (history7) {\small\tt size};
+\node [rect, below of = history7, node distance = 0.8cm] (history8) {\small\tt comment};
+\node[text width=3em] at (-6.47,-1.6) {\it \large Wikipedia};
+\node[text width=3em] at (-6.2,-2.2) {\it \large History};
+
+% Traffic
+\node [rect] at (6,-3) (traffic1) {\small\tt pageid};
+\node [rect, below of = traffic1, node distance = 0.8cm] (traffic2) {\small\tt date};
+\node [rect, below of = traffic2, node distance = 0.8cm] (traffic3) {\small\tt traffic};
+\node[text width=3em] at (5.54,-1.6) {\it \large Wikipedia};
+\node[text width=3em] at (5.9,-2.2) {\it \large Traffic};
+
+% Social
+\node [rect] at (-6,-11.5) (social1) {\small\tt wikidataid};
+\node [rect, below of = social1, node distance = 0.8cm] (social2) {\small\tt twitter};
+\node [rect, below of = social2, node distance = 0.8cm] (social3) {\small\tt facebook};
+\node [rect, below of = social3, node distance = 0.8cm] (social4) {\small\tt youtube};
+\node [rect, below of = social4, node distance = 0.8cm] (social5) {\small\tt googlep};
+\node [rect, below of = social5, node distance = 0.8cm] (social6) {\small\tt instagram};
+\node [rect, below of = social6, node distance = 0.8cm] (social7) {\small\tt linkedin};
+\node [rect, below of = social7, node distance = 0.8cm] (social8) {\small\tt website};
+\node[text width=3em] at (-6,-10.7) {\it \large Social};
+
+% Facial
+\node [rectw] at (6,-7.5) (facial1) {\small\tt pageid};
+\node [rectw, below of = facial1, node distance = 0.8cm] (facial2) {\small\tt session};
+\node [rectw, below of = facial2, node distance = 0.8cm] (facial3) {\small\tt party};
+\node [rectw, below of = facial3, node distance = 0.8cm] (facial4) {\small\tt constituency};
+\node [rectw, below of = facial4, node distance = 0.8cm] (facial5) {\small\tt constituency2};
+\node [rectw, below of = facial5, node distance = 0.8cm] (facial6) {\small\tt constituency_id};
+\node [rectw, below of = facial6, node distance = 0.8cm] (facial7) {\small\tt session_start};
+\node [rectw, below of = facial7, node distance = 0.8cm] (facial8) {\small\tt session_end};
+\node [rectw, below of = facial8, node distance = 0.8cm] (facial9) {\small\tt service};
+\node [rectw, below of = facial9, node distance = 0.8cm] (facial10) {\small\tt government};
+\node [rectw, below of = facial10, node distance = 0.8cm] (facial11) {\small\tt leader};
+\node [rectw, below of = facial11, node distance = 0.8cm] (facial12) {\small\tt ...};
+\node[text width=3em] at (5.65,-6.7) {\it \large Political};
+
+
+% IDs
+\node [rect] at (-2,2) (ids1) {\small\tt wikidataid};
+\node [rect, below of = ids1, node distance = 0.8cm] (ids2) {\small\tt parlid};
+\node [rect, below of = ids2, node distance = 0.8cm] (ids3) {\small\tt gndid};
+\node [rect, below of = ids3, node distance = 0.8cm] (ids4) {\small\tt libcon};
+\node [rect, below of = ids4, node distance = 0.8cm] (ids5) {\small\tt nndb};
+\node [rect, below of = ids5, node distance = 0.8cm] (ids6) {\small\tt ...};
+\node[text width=3em] at (-1.8,2.8) {\it \large IDs};
+
+% Positions
+\node [rect] at (2,2) (positions1) {\small\tt wikidataid};
+\node [rect, below of = positions1, node distance = 0.8cm] (positions2) {\small\tt position_1};
+\node [rect, below of = positions2, node distance = 0.8cm] (positions3) {\small\tt position_2};
+\node [rect, below of = positions3, node distance = 0.8cm] (positions4) {\small\tt position_3};
+\node [rect, below of = positions4, node distance = 0.8cm] (positions5) {\small\tt position_4};
+\node [rect, below of = positions5, node distance = 0.8cm] (positions6) {\small\tt ...};
+\node[text width=3em] at (1.9,2.8) {\it \large Offices};
+
+% Occupation
+\node [rect] at (-2,-16) (occupation1) {\small\tt wikidataid};
+\node [rect, below of = occupation1, node distance = 0.8cm] (occupation2) {\small\tt occupation_1};
+\node [rect, below of = occupation2, node distance = 0.8cm] (occupation3) {\small\tt occupation_2};
+\node [rect, below of = occupation3, node distance = 0.8cm] (occupation4) {\small\tt occupation_3};
+\node [rect, below of = occupation4, node distance = 0.8cm] (occupation5) {\small\tt occupation_4};
+\node [rect, below of = occupation5, node distance = 0.8cm] (occupation6) {\small\tt ...};
+\node[text width=3em] at (-2.6,-15.2) {\it \large Professions};
+
+% Political
+\node [rect] at (2,-16) (political1) {\small\tt pageid};
+\node [rect, below of = political1, node distance = 0.8cm] (political2) {\small\tt image_url};
+\node[text width=3em] at (1.65,-15.2) {\it \large Portraits};
+
+
+[1] "pageid"        "session"       "party"         "constituency"  "session_start" "session_end"   "service"  
+
+% Anchors
+
+\node[ncircle] (circ1) at (4.14,-7.5) {}; % Facial
+\node[ncircle] (circ2) at (4.62,-3) {}; % Traffic
+\node[ncircle] (circ3) at (-4.62,-3) {}; % History
+\node[ncircle] (circ4) at (-4.62,-11.5) {}; % Social
+\node[ncircle] (circ5) at (-3.38,2) {}; % IDs
+\node[ncircle] (circ6) at (3.38,2) {}; % Positions
+\node[ncircle] (circ7) at (-3.38,-16) {}; % Occupations
+\node[ncircle] (circ8) at (0.62,-16) {}; % Political
+
+
+% Arrows
+\path [line] (circ6) -| (3.9,-4) |- (core2.east); % Positions
+\node[strectv] at (3.9,-3) (s) {};
+\node[strecth] at (2.7,-5.8) (s) {};
+\path [line] (circ1) -| (2.7,-6) |- (core1); % Facial
+\path [line] (circ2) -| (2.7,-4) |- (core1); % Traffic
+\path [line] (circ5) -| (-3.9,-4) |- (core2.west); % IDs
+\node[strectv] at (-3.9,-3) (s) {};
+\path [line] (circ3) -| (-2.9,-4) |- (core1.west); % History
+\path [line] (circ4) -| (-2.9,-7) |- (core2.west); % Social
+\path [line] (circ7) -| (-3.9,-11.5) -| (-2.9,-7) |- (core2.west); % Occupation
+\path [line] (circ8) -| (0.1,-14.2) -| (2.7,-7) |- (core1.east); % Politician
+
+
+\end{tikzpicture}
+\end{center}
+
+\end{document}
+
+
+
+
