@@ -1,5 +1,5 @@
 # Supplementary and replication materials for the paper <br /> "The Comparative Legislators Database"
-This repository contains supplementary and replication materials for the paper "The Comparative Legislators Database" by Sascha Göbel and Simon Munzert. The current version of the paper is available at XXX.
+This repository contains supplementary and replication materials for the paper "The Comparative Legislators Database" by Sascha Göbel and Simon Munzert.
 See also the corresponding R package [legislatoR](https://github.com/saschagobel/legislatoR).
 
 ## Abstract
@@ -9,7 +9,6 @@ Knowledge about political representatives' behavior is crucial for a deeper unde
 * [Code](https://github.com/saschagobel/comparative-legislators-database/tree/master/code): contains R code and other files for replication of analyses, validation, and figures
 * [Data](https://github.com/saschagobel/comparative-legislators-database/tree/master/data): contains all data required for replication of analyses and validation
 * [Figures](https://github.com/saschagobel/comparative-legislators-database/tree/master/figures): contains all figures presented in the paper and appendix
-* Online-appendix
 * [Sources](https://github.com/saschagobel/legislatoR/blob/master/SOURCES.md) and [Source code](https://github.com/saschagobel/legislatoR/tree/master/source) for assembling the database. HTML files required for replicating the initial automatic data collection procedure are available from the authors upon request.
 
 ## Author information
