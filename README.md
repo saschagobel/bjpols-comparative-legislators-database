@@ -18,10 +18,10 @@ University of Konstanz <br />
 Graduate School of Decision Sciences and Center for Data and Methods <br />
 Box 85 <br />
 D-78457 Konstanz, Germany <br />
-Email: sascha.goebel@uni-konstanz.de 
+Email: sascha.goebel [at] uni-konstanz.de 
 
 **Simon Munzert** <br />
 Hertie School of Governance <br />
 Quartier 110 - Friedrichstrasse 180 <br />
 D-10117 Berlin, Germany <br />
-Email: munzert@hertie-school.org
+Email: munzert [at] hertie-school.org
