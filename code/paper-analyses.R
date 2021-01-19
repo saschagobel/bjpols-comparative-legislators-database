@@ -40,8 +40,8 @@ rm(list=ls(all=TRUE))
 setwd("comparative-legislators-database")
 
 # install and load packages -------------------------------------------------------------
-source("./code/packages.R")
-source("./code/functions.R")
+source("./code/paper-packages.R")
+source("./code/paper-functions.R")
 
 
 #### FIGURE 1 ===========================================================================
