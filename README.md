@@ -1,5 +1,5 @@
 # Supplementary and replication materials for the paper <br /> "The Comparative Legislators Database"
-This repository contains supplementary and replication materials for the paper "The Comparative Legislators Database" by Sascha Göbel and Simon Munzert, forthcoming in *British Journal of Political Science*.
+This repository contains supplementary and replication materials for the paper "The Comparative Legislators Database" by Sascha Göbel and Simon Munzert, published in [*British Journal of Political Science*](https://www.cambridge.org/core/journals/british-journal-of-political-science/article/abs/comparative-legislators-database/D28BB58A8B2C08C8593DB741F42C18B2).
 See also the corresponding R package [legislatoR](https://github.com/saschagobel/legislatoR).
 
 ## Abstract
